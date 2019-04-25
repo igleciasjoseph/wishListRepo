@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+</head>
+<body>
+    <div id='container'>
+        <div>
+            <a href="/dashboard">Home</a>
+            <a href="/logout">Logout</a>
+        </div>
+        <div>
+            <h1>{{item.item}}</h1>
+            <h3>Users who added this product/item under their wish list:</h3>
+            {% for joiner in joiners %}
+            <p>{{ joiner.name }}</p>
+            {%endfor%}
+        </div>
+    </div>
+</body>
+</html>
